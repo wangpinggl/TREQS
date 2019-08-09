@@ -9,7 +9,9 @@ A Translate-Edit Model for Question to SQL Query Generation
 #### Our new implementation is available at https://github.com/wangpinggl/TREQS. Please check it.
 - This repository is a pytorch implementation of the Translate-Edit Model for Question to SQL Query Generation proposed in the following paper:
 
-#### [A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](https://arxiv.org/abs/1908.01839)
+
+[A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](https://arxiv.org/abs/1908.01839)
+
 [Ping Wang](https://github.com/wangpinggl)
 [Tian Shi](https://github.com/tshi04), 
 [Chandan K. Reddy](http://people.cs.vt.edu/~reddy/)
