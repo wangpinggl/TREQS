@@ -27,6 +27,7 @@ The MIMICSQL dataset will be released soon.
 
 - ```Test:``` python main.py --task test
 
+## Citation
 If you use the code, please kindly consider citing our paper:
 
 ```
