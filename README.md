@@ -13,3 +13,25 @@ A Translate-Edit Model for Question to SQL Query Generation
 [Ping Wang](https://github.com/wangpinggl)
 [Tian Shi](https://github.com/tshi04), 
 [Chandan K. Reddy](http://people.cs.vt.edu/~reddy/)
+
+## Dataset
+The MIMICSQL dataset will be released soon.
+
+## Usuage
+
+- ```Training:``` python main.py 
+
+- ```Validate:``` python main.py --task validate
+
+- ```Test:``` python main.py --task test
+
+If you use the code, please kindly consider citing our paper:
+
+```
+    @article{wang2019treqs,
+     title={A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data},
+     author={Wang, Ping and Shi, Tian and Reddy, Chandan K.},
+     journal={arXiv preprint arXiv:1908.01839},
+     year={2019}
+    }
+```
