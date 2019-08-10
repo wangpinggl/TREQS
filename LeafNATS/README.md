@@ -4,4 +4,6 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![image](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/tshi04/goNLP/graphs/contributors)
 
+Please go to [LeafNATS](https://github.com/tshi04/LeafNATS) for latest version. You can also find a copy of TREQS there.
+
 
