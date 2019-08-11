@@ -6,9 +6,7 @@ A Translate-Edit Model for Question to SQL Query Generation
 [![image](https://img.shields.io/github/contributors/Naereen/StrapDown.js.svg)](https://github.com/wangpinggl/TREQS/graphs/contributors)
 [![image](https://img.shields.io/badge/arXiv-1908.01839-red.svg?style=flat)](https://arxiv.org/abs/1908.01839)
 
-#### Our new implementation is available at https://github.com/wangpinggl/TREQS. Please check it.
-- This repository is a pytorch implementation of the Translate-Edit Model for Question to SQL Query Generation proposed in the following paper:
-
+This repository is a pytorch implementation of the Translate-Edit Model for Question to SQL Query Generation proposed in the following paper:
 
 [A Translate-Edit Model for Natural Language Question to SQL Query Generation on Multi-relational Healthcare Data](https://arxiv.org/abs/1908.01839)
 
@@ -28,7 +26,6 @@ The MIMICSQL dataset will be released soon.
 - ```Test:``` python main.py --task test
 
 ## Citation
-If you use the code, please kindly consider citing our paper:
 
 ```
 @article{wang2019treqs,
