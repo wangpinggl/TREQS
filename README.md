@@ -14,8 +14,6 @@ A Translate-Edit Model for Question to SQL Query Generation
 [Tian Shi](https://github.com/tshi04), 
 [Chandan K. Reddy](http://people.cs.vt.edu/~reddy/)
 
-- Another version of TREQS can be found in [LeafNATS](https://github.com/tshi04/LeafNATS/tree/master/seq2sql/treqs).
-
 ## Dataset
 The MIMICSQL dataset will be released soon.
 
