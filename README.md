@@ -59,9 +59,15 @@ MIMICSQL is created based on the publicly available real-world [Medical Informat
 The meaning of each elements are as follows:
 
 - `key`: a unique ID of each data sample. You can make correspondence between the template question and natural language question using this ID.
-- `question_refine`: the machine genrated template question or natural language question annotated by [freelancers](https://www.freelancer.com/).
-- `question_refine_tok`: tokenized.
-- `format`:
+- `question_refine`: the machine genrated template question or natural language question annotated by [Freelancers](https://www.freelancer.com/).
+- `question_refine_tok`: the tokenized question. The content is ignored here. You can find details in the dataset.
+- `sql`: the SQL query corresponding to the question.
+- `sql_tok`: the tokenized SQL query. The content is ignored here. You can find details in the dataset.
+- `format`: the logical format of SQL query, which included the following sub-elements:
+  - `table`: a list of numerical index of tables that are related to the question.
+  - `cond`: 
+  - `agg_col`: a list of `[talble_index, column_index]`, where 
+  - `sel`: the numerical index of aggregation operation used in the SQL query.
 
 ## Usuage
 
