@@ -66,13 +66,13 @@ The meaning of each elements are as follows:
 - `format`: the logical format of SQL query, which included the following sub-elements:
   - `table`: a list of numerical index of tables that are related to the question.
   - `cond`: a list of `[talble_index, condition_column_index, condition_operation_index, condition_value]`, where:
-    -`table_index`: the numerical index of table that is related to this condition column.
-    -`condition_column_index`: the numerical index of column that is used for this condition.
-    -`condition_operation_index`: the numerical index of condition operation. Here is the dictionary `{'=': 0, '>': 1, '<': 2, '>=': 3, '<=': 4}`.
-    -`condition_value`: the value for the condition. 
+    - `table_index`: the numerical index of table that is related to this condition column.
+    - `condition_column_index`: the numerical index of column that is used for this condition.
+    - `condition_operation_index`: the numerical index of condition operation. Here is the dictionary `{'=': 0, '>': 1, '<': 2, '>=': 3, '<=': 4}`.
+    - `condition_value`: the value for the condition. 
   - `agg_col`: a list of `[talble_index, aggreation_column_index]`.
-    -`table_index`: the numerical index of table that is related to this aggregation column.
-    -`column_index`: the numerical index of column that is used for aggregation.
+    - `table_index`: the numerical index of table that is related to this aggregation column.
+    - `column_index`: the numerical index of column that is used for aggregation.
   - `sel`: the numerical index of aggregation operation used in the SQL query. Here is the dictionary `{'': 0, 'count': 1, 'max': 2, 'min': 3, 'avg': 4}`.
 
 ## Usuage
