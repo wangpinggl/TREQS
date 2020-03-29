@@ -6,13 +6,10 @@
 [![image](https://img.shields.io/badge/arXiv-1908.01839-red.svg?style=flat)](https://arxiv.org/abs/1908.01839)
 
 - This repository is a pytorch implementation of the TREQS model for Question-to-SQL generation proposed in our WWW'20 paper:
-[Text-to-SQL Generation for Question Answering on Electronic Medical Records](http://dmkd.cs.vt.edu/papers/WWW20.pdf),
-[Ping Wang](https://github.com/wangpinggl),
-[Tian Shi](https://github.com/tshi04), 
-[Chandan K. Reddy](http://people.cs.vt.edu/~reddy/).
+[Text-to-SQL Generation for Question Answering on Electronic Medical Records](http://dmkd.cs.vt.edu/papers/WWW20.pdf). 
 
 ## Dataset
-The MIMICSQL dataset is provided in folder 'mimicsql_data'.
+In this work, we created a large-scale dataset MIMICSQL for Question-to-SQL task in healthcare domain using the publicly available real-world [Medical Information Mart for Intensive Care III (MIMIC III)](https://mimic.physionet.org/gettingstarted/access/) dataset. MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). The MIMICSQL dataset is provided in folder 'mimicsql_data' in this repository.
 
 ## Usuage
 
