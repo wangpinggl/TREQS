@@ -20,79 +20,55 @@ MIMICSQL is created based on the publicly available real-world [Medical Informat
 - ```Example:``` Here we provide a data sample in MIMICSQL to illustrate the meaning of each element.
 
 ```json
-{
-  "key": "a81dae5ff42498734e857c5b7dc46deb",
-  "format": {
-    "table": [
-      0,
-      2
-    ],
-    "cond": [
-      [
-        0,
-        6,
-        0,
-        "F"
-      ],
-      [
-        2,
-        3,
-        0,
-        "Abdomen artery incision"
-      ]
-    ],
-    "agg_col": [
-      [
-        0,
-        0
-      ]
-    ],
-    "sel": 1
-  },
-  "question_refine": "how many female patients underwent the procedure of abdomen artery incision?",
-  "sql": "SELECT COUNT ( DISTINCT DEMOGRAPHIC.\"SUBJECT_ID\" ) FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"GENDER\" = \"F\" AND PROCEDURES.\"SHORT_TITLE\" = \"Abdomen artery incision\"",
-  "question_refine_tok": [
-    "how",
-    "many",
-    "female",
-    "patients",
-    "underwent",
-    "the",
-    "procedure",
-    "of",
-    "abdomen",
-    "artery",
-    "incision",
-    "?"
-  ],
-  "sql_tok": [
-    "SELECT",
-    "COUNT",
-    "(",
-    "DISTINCT",
-    "DEMOGRAPHIC.\"SUBJECT_ID\"",
-    ")",
-    "FROM",
-    "DEMOGRAPHIC",
-    "INNER",
-    "JOIN",
-    "PROCEDURES",
-    "on",
-    "DEMOGRAPHIC.HADM_ID",
-    "=",
-    "PROCEDURES.HADM_ID",
-    "WHERE",
-    "DEMOGRAPHIC.\"GENDER\"",
-    "=",
-    "\"F\"",
-    "AND",
-    "PROCEDURES.\"SHORT_TITLE\"",
-    "=",
-    "\"Abdomen",
-    "artery",
-    "incision\""
-  ]
-}
+{'key': 'a81dae5ff42498734e857c5b7dc46deb',
+ 'format': {'agg_col': [[0, 0]],
+            'cond': [[0, 6, 0, 'F'], [2, 3, 0, 'Abdomen artery incision']],
+            'sel': 1,
+            'table': [0, 2]},
+ 'question_refine': 'how many female patients underwent the procedure of '
+                    'abdomen artery incision?',
+ 'question_refine_tok': ['how',
+                         'many',
+                         'female',
+                         'patients',
+                         'underwent',
+                         'the',
+                         'procedure',
+                         'of',
+                         'abdomen',
+                         'artery',
+                         'incision',
+                         '?'],
+ 'sql': 'SELECT COUNT ( DISTINCT DEMOGRAPHIC."SUBJECT_ID" ) FROM DEMOGRAPHIC '
+        'INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID '
+        'WHERE DEMOGRAPHIC."GENDER" = "F" AND PROCEDURES."SHORT_TITLE" = '
+        '"Abdomen artery incision"',
+ 'sql_tok': ['SELECT',
+             'COUNT',
+             '(',
+             'DISTINCT',
+             'DEMOGRAPHIC."SUBJECT_ID"',
+             ')',
+             'FROM',
+             'DEMOGRAPHIC',
+             'INNER',
+             'JOIN',
+             'PROCEDURES',
+             'on',
+             'DEMOGRAPHIC.HADM_ID',
+             '=',
+             'PROCEDURES.HADM_ID',
+             'WHERE',
+             'DEMOGRAPHIC."GENDER"',
+             '=',
+             '"F"',
+             'AND',
+             'PROCEDURES."SHORT_TITLE"',
+             '=',
+             '"Abdomen',
+             'artery',
+             'incision"']}
+
 ```
 
 ## Usuage
