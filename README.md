@@ -56,6 +56,13 @@ MIMICSQL is created based on the publicly available real-world [Medical Informat
 }
 ```
 
+The meaning of each elements are as follows:
+
+- `key`: a unique ID of each data sample. You can make correspondence between the template question and natural language question using this ID.
+- `question_refine`: the machine genrated template question or natural language question annotated by [freelancers](https://www.freelancer.com/).
+- `question_refine_tok`: tokenized.
+- `format`:
+
 ## Usuage
 
 - ```Training:``` python main.py 
