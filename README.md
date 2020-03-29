@@ -51,22 +51,8 @@ MIMICSQL is created based on the publicly available real-world [Medical Informat
   },
   "question_refine": "how many female patients underwent the procedure of abdomen artery incision?",
   "sql": "SELECT COUNT ( DISTINCT DEMOGRAPHIC.\"SUBJECT_ID\" ) FROM DEMOGRAPHIC INNER JOIN PROCEDURES on DEMOGRAPHIC.HADM_ID = PROCEDURES.HADM_ID WHERE DEMOGRAPHIC.\"GENDER\" = \"F\" AND PROCEDURES.\"SHORT_TITLE\" = \"Abdomen artery incision\"",
-  "question_refine_tok": [
-    "how",
-    "many",
-    ...,
-    "artery",
-    "incision",
-    "?"
-  ],
-  "sql_tok": [
-    "SELECT",
-    "COUNT",
-    ...,
-    "\"Abdomen",
-    "artery",
-    "incision\""
-  ]
+  "question_refine_tok": [],
+  "sql_tok": []
 }
 ```
 
