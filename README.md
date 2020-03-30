@@ -13,7 +13,7 @@
 ## Dataset
 MIMICSQL is created based on the publicly available real-world [Medical Information Mart for Intensive Care III (MIMIC III)](https://mimic.physionet.org/gettingstarted/access/) dataset.  
 
-- ```Database:``` We extracted five categories of information for 46,520 patients, including demographics, laboratory tests, diagnosis, procedures and prescriptions, and prepared a specific table for each category separately. These tables compose a relational patient database where tables are linked through patient ID and admission ID. The numerical indexes of tables is `{'Demographic': 0, 'Diagnoses': 1, 'Procedures': 2, 'Prescriptions': 3, 'Lab': 4}`. The detailed columns in each table are as follows:
+- ```Database:``` We extracted five categories of information for 46,520 patients, including demographics, laboratory tests, diagnosis, procedures and prescriptions, and prepared a specific table for each category separately. These tables compose a relational patient database where tables are linked through patient ID and admission ID. The numerical indexes of tables is `{'Demographic': 0, 'Diagnoses': 1, 'Procedures': 2, 'Prescriptions': 3, 'Lab': 4}`. The columns included in each table are as follows:
   - `Demographic`: `['hadm_id', ‘subject_id’, ‘name’, ‘marital status’, ‘age’, ‘date of birth’, ‘gender’, ‘language’, ‘religion’, ‘admission type’, ‘days of hospital stay’, ‘insurance’, ‘ethnicity’, ‘death status’, ‘admission location’, ‘discharge location’, ‘primary disease’, ‘date of death’, ‘year of birth’, ‘year of death’, ‘admission time’, ‘discharge time’, ‘admission year’]`
   - `Diagnoses`: `[‘subject_id’, ‘hadm_id’, ‘diagnoses icd9 code’, ‘diagnoses short title’, ‘diagnoses long title’]`
   - `Procedures`: `[‘subject_id’, ‘hadm_id’, ‘procedure icd9 code’, ‘procedure short title’, ‘procedure long title’]`
@@ -62,7 +62,6 @@ MIMICSQL is created based on the publicly available real-world [Medical Informat
 ```
 
 The meaning of each elements are as follows:
-
 - `key`: a unique ID of each data sample. You can make correspondence between the template question and natural language question using this ID.
 - `question_refine`: the machine genrated template question or natural language question annotated by [Freelancers](https://www.freelancer.com/).
 - `question_refine_tok`: the tokenized question. The content is ignored here. You can find details in the dataset.
