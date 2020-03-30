@@ -11,7 +11,7 @@
 - In this work, we also created a large-scale dataset MIMICSQL for Question-to-SQL task in healthcare domain. The MIMICSQL dataset is provided in folder [mimicsql_data](https://github.com/wangpinggl/TREQS/tree/master/mimicsql_data) in this repository. More details about MIMICSQL dataset are provided below.
 
 ## Dataset
-MIMICSQL is created based on the publicly available real-world [Medical Information Mart for Intensive Care III (MIMIC III)](https://mimic.physionet.org/gettingstarted/access/) dataset.  
+MIMICSQL is created based on the publicly available real-world de-identified [Medical Information Mart for Intensive Care III (MIMIC III)](https://mimic.physionet.org/gettingstarted/access/) dataset. In order to generated more realistic questions, each patient is randomly assigned a synthetic name, which should not be used to identify any patients.
 
 - ```Database:``` We extracted five categories of information for 46,520 patients, including demographics, laboratory tests, diagnosis, procedures and prescriptions, and prepared a specific table for each category separately. These tables compose a relational patient database where tables are linked through patient ID and admission ID. The numerical indexes of tables is `{'Demographic': 0, 'Diagnoses': 1, 'Procedures': 2, 'Prescriptions': 3, 'Lab': 4}`. The columns included in each table are as follows:
   - `Demographic`: `['hadm_id', ‘subject_id’, ‘name’, ‘marital status’, ‘age’, ‘date of birth’, ‘gender’, ‘language’, ‘religion’, ‘admission type’, ‘days of hospital stay’, ‘insurance’, ‘ethnicity’, ‘death status’, ‘admission location’, ‘discharge location’, ‘primary disease’, ‘date of death’, ‘year of birth’, ‘year of death’, ‘admission time’, ‘discharge time’, ‘admission year’]`
