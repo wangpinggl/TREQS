@@ -19,7 +19,7 @@ MIMICSQL is created based on the publicly available real-world de-identified [Me
   - `Prescriptions`: `[‘subject_id’, ‘hadm_id’, ‘icustay_id’, ‘drug type’, ‘drug name’, ‘drug code’, ‘drug route’, ‘drug dose’]`
   - `Lab`: `[‘subject_id’, ‘hadm_id’, ‘itemid’, ‘lab test chart time’, ‘lab test abnormal status’, ‘lab test value’, ‘lab test name’, ‘lab test fluid’, ‘lab test category’]`
 
-- ```Questions:``` MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). Generally, each template question is rephrased as one natural language question. Recently, we add more natural language questions for a subset of template questions. Readers are refered to read the [paper](http://dmkd.cs.vt.edu/papers/WWW20.pdf) get more detailed information for question generation and basic statistics of MIMICSQL dataset.
+- ```Questions:``` MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). Generally, each template question is rephrased as one natural language question. Readers are refered to read the [paper](http://dmkd.cs.vt.edu/papers/WWW20.pdf) get more detailed information for question generation and basic statistics of MIMICSQL dataset.
 
 - ```Example:``` Here we provide a data sample in MIMICSQL to illustrate the meaning of each element.
 
@@ -63,7 +63,6 @@ MIMICSQL is created based on the publicly available real-world de-identified [Me
 The meaning of each elements are as follows:
 - `key`: a unique ID of each data sample. You can make correspondence between the template question and natural language question using this ID.
 - `question_refine`: the machine genrated template question (in `mimicsql_template` folder) or natural language question (in `mimicsql_natural` folder) annotated by [Freelancers](https://www.freelancer.com/). You can make correspondence between tmplate question and natural language questions using `key` of each data sample.
-- `question_refine_new`: for a subset of natural language questions, we recently added a new version of rephrased questions. If the element `question_refine_new` is available, it provides the new version of reaphrasing.
 - `question_refine_tok`: the tokenized question. The content is ignored here. You can find details in the dataset.
 - `sql`: the SQL query corresponding to the question.
 - `sql_tok`: the tokenized SQL query. The content is ignored here. You can find details in the dataset.
