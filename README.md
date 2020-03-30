@@ -20,7 +20,7 @@ MIMICSQL is created based on the publicly available real-world de-identified [Me
   - `Prescriptions`: `[‘subject_id’, ‘hadm_id’, ‘icustay_id’, ‘drug type’, ‘drug name’, ‘drug code’, ‘drug route’, ‘drug dose’]`
   - `Lab`: `[‘subject_id’, ‘hadm_id’, ‘itemid’, ‘lab test chart time’, ‘lab test abnormal status’, ‘lab test value’, ‘lab test name’, ‘lab test fluid’, ‘lab test category’]`
 
-- ```Questions:``` MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). Generally, each template question is rephrased as one natural language question. Recently, we add more natural language questions for a subset of template questions. Readers are refered to get more detailed information for question generation and basic statistics of MIMICSQL dataset.
+- ```Questions:``` MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). Generally, each template question is rephrased as one natural language question. Recently, we add more natural language questions for a subset of template questions. Readers are refered to read the [paper](http://dmkd.cs.vt.edu/papers/WWW20.pdf) get more detailed information for question generation and basic statistics of MIMICSQL dataset.
 
 - ```Example:``` Here we provide a data sample in MIMICSQL to illustrate the meaning of each element.
 
