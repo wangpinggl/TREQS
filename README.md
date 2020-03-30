@@ -13,7 +13,12 @@
 ## Dataset
 MIMICSQL is created based on the publicly available real-world [Medical Information Mart for Intensive Care III (MIMIC III)](https://mimic.physionet.org/gettingstarted/access/) dataset.  
 
-- ```Database:``` We extracted five categories of information for 46,520 patients, including demographics, laboratory tests, diagnosis, procedures and prescriptions, and prepared a specific table for each category separately. These tables compose a relational patient database where tables are linked through patient ID and admission ID.
+- ```Database:``` We extracted five categories of information for 46,520 patients, including demographics, laboratory tests, diagnosis, procedures and prescriptions, and prepared a specific table for each category separately. These tables compose a relational patient database where tables are linked through patient ID and admission ID. The numerical indexes of tables is `{'Demographic': 0, 'Diagnoses': 1, 'Procedures': 2, 'Prescriptions': 3, 'Lab': 4}`. The detailed columns in each table are as follows:
+  - `Demographic`: `['hadm_id', ‘subject_id’, ‘name’, ‘marital status’, ‘age’, ‘date of birth’, ‘gender’, ‘language’, ‘religion’, ‘admission type’, ‘days of hospital stay’, ‘insurance’, ‘ethnicity’, ‘death status’, ‘admission location’, ‘discharge location’, ‘primary disease’, ‘date of death’, ‘year of birth’, ‘year of death’, ‘admission time’, ‘discharge time’, ‘admission year’]`
+  - `Diagnoses`: `[‘subject_id’, ‘hadm_id’, ‘diagnoses icd9 code’, ‘diagnoses short title’, ‘diagnoses long title’]`
+  - `Procedures`: `[‘subject_id’, ‘hadm_id’, ‘procedure icd9 code’, ‘procedure short title’, ‘procedure long title’]`
+  - `Prescriptions`: `[‘subject_id’, ‘hadm_id’, ‘icustay_id’, ‘drug type’, ‘drug name’, ‘drug code’, ‘drug route’, ‘drug dose’]`
+  - `Lab`: `[‘subject_id’, ‘hadm_id’, ‘itemid’, ‘lab test chart time’, ‘lab test abnormal status’, ‘lab test value’, ‘lab test name’, ‘lab test fluid’, ‘lab test category’]`
 
 - ```Questions:``` MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). Generally, each template question is rephrased as one natural language question. Recently, we add more natural language questions for a subset of template questions. Readers are refered to get more detailed information for question generation and basic statistics of MIMICSQL dataset.
 
