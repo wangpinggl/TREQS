@@ -9,6 +9,17 @@
 
 - In this work, we are also releasing a large-scale dataset MIMICSQL for Question-to-SQL generation task in healthcare domain. The MIMICSQL dataset is provided in folder [mimicsql_data](https://github.com/wangpinggl/TREQS/tree/master/mimicsql_data) in this repository. More details about MIMICSQL dataset are provided below.
 
+## Citation
+
+```
+@inproceedings{wang2020treqs,
+ title={Text-to-SQL Generation for Question Answering on Electronic Medical Records},
+ author={Wang, Ping and Shi, Tian and Reddy, Chandan K.},
+ booktitle={Proceedings of the 2020 World Wide Web Conference},
+ year={2020}
+}
+```
+
 ## Dataset
 MIMICSQL is created based on the publicly available real-world de-identified [Medical Information Mart for Intensive Care III (MIMIC III)](https://mimic.physionet.org/gettingstarted/access/) dataset. In order to generated more realistic questions, each patient is randomly assigned a synthetic name, which should not be used to identify any patients.
 
@@ -85,16 +96,3 @@ The meaning of each elements are as follows:
 - ```Validate:``` python main.py --task validate
 
 - ```Test:``` python main.py --task test
-
-## Citation
-
-```
-@inproceedings{wang2020treqs,
- title={Text-to-SQL Generation for Question Answering on Electronic Medical Records},
- author={Wang, Ping and Shi, Tian and Reddy, Chandan K.},
- booktitle={Proceedings of the 2020 World Wide Web Conference},
- year={2020}
-}
-```
-
-
