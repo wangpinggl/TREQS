@@ -9,7 +9,7 @@
 
 - In this work, we are also releasing a large-scale dataset MIMICSQL for Question-to-SQL generation task in healthcare domain. The MIMICSQL dataset is provided in folder [mimicsql_data](https://github.com/wangpinggl/TREQS/tree/master/mimicsql_data) in this repository. More details about MIMICSQL dataset are provided below.
 
-- Related links to this work:
+- Links related to this work:
   - `Paper`: http://dmkd.cs.vt.edu/papers/WWW20.pdf
   - `Dataset and codes`: https://github.com/wangpinggl/TREQS
   - `Slides`: Will be added soon.
