@@ -1,4 +1,4 @@
-# TREQS: A Translate-Edit Model for Question-to-SQL Query Generation
+# Text-to-SQL Generation for Question Answering on Electronic Medical Records
 
 [![image](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![image](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/wangpinggl/TREQS/blob/master/LICENSE)
