@@ -13,7 +13,7 @@
 Ping Wang, Tian Shi, and Chandan K. Reddy. Text-to-SQL Generation for Question Answering on Electronic Medical Records. In Proceedings of The Web Conference 2020 (WWW’20), April 20–24, 2020, Taipei, Taiwan.
 
 ```
-@inproceedings{wang2020treqs,
+@inproceedings{wang2020text,
  title={Text-to-SQL Generation for Question Answering on Electronic Medical Records},
  author={Wang, Ping and Shi, Tian and Reddy, Chandan K.},
  booktitle={Proceedings of The Web Conference 2020 (WWW'20)},
