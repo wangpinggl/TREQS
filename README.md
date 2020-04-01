@@ -9,11 +9,11 @@
 
 - In this work, we are also releasing a large-scale dataset MIMICSQL for Question-to-SQL generation task in healthcare domain. The MIMICSQL dataset is provided in folder [mimicsql_data](https://github.com/wangpinggl/TREQS/tree/master/mimicsql_data) in this repository. More details about MIMICSQL dataset are provided below.
 
-- Here are related links to this work:
- - Paper: http://dmkd.cs.vt.edu/papers/WWW20.pdf
- - Dataset and codes: https://github.com/wangpinggl/TREQS
- - Slides: Will be added soon.
- - Presentation Video: Will be added soon.
+- Related links to this work:
+ - `Paper`: http://dmkd.cs.vt.edu/papers/WWW20.pdf
+ - `Dataset and codes`: https://github.com/wangpinggl/TREQS
+ - `Slides`: Will be added soon.
+ - `Presentation Video`: Will be added soon.
 
 ## Citation
 Ping Wang, Tian Shi, and Chandan K. Reddy. Text-to-SQL Generation for Question Answering on Electronic Medical Records. In Proceedings of The Web Conference 2020 (WWW’20), April 20–24, 2020, Taipei, Taiwan.
