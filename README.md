@@ -11,7 +11,7 @@
 
 - Links related to this work:
   - Paper: http://dmkd.cs.vt.edu/papers/WWW20.pdf
-  - Dataset and codes`: https://github.com/wangpinggl/TREQS
+  - Dataset and codes: https://github.com/wangpinggl/TREQS
   - Slides: Will be added soon.
   - Presentation Video: Will be added soon.
 
