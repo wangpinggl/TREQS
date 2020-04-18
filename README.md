@@ -84,7 +84,7 @@ The meaning of each elements are as follows:
 - `question_refine_tok`: the tokenized question. The content is ignored here. You can find details in the dataset.
 - `sql`: the SQL query corresponding to the question.
 - `sql_tok`: the tokenized SQL query. The content is ignored here. You can find details in the dataset.
-- `format`: the logical format of SQL query, which is inspired by the logical format used in [WikiSQL](https://github.com/salesforce/WikiSQL) and includs the following sub-elements:
+- `format`: the logical format of SQL query, which is inspired by the logical format used in [WikiSQL](https://github.com/salesforce/WikiSQL). It includes the following sub-elements:
   - `table`: a list of numerical index of tables that are related to the question.
   - `cond`: a list of `[talble_index, condition_column_index, condition_operation_index, condition_value]`, where:
     - `table_index`: the numerical index of table that is related to this condition column.
