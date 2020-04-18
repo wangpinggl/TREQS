@@ -12,8 +12,8 @@
 - Links related to this work:
   - Paper: http://dmkd.cs.vt.edu/papers/WWW20.pdf
   - Dataset and codes: https://github.com/wangpinggl/TREQS
-  - Slides: Will be added soon.
-  - Presentation Video: Will be added soon.
+  - Slides: https://github.com/wangpinggl/TREQS/blob/master/TREQS.pdf
+  - Presentation Video: [Video](https://drive.google.com/open?id=1tXRaobsz1BWUJpzV976pgox_46c8jkPE)
 
 ## Citation
 Ping Wang, Tian Shi, and Chandan K. Reddy. Text-to-SQL Generation for Question Answering on Electronic Medical Records. In Proceedings of The Web Conference 2020 (WWW’20), April 20–24, 2020, Taipei, Taiwan.
@@ -84,7 +84,7 @@ The meaning of each elements are as follows:
 - `question_refine_tok`: the tokenized question. The content is ignored here. You can find details in the dataset.
 - `sql`: the SQL query corresponding to the question.
 - `sql_tok`: the tokenized SQL query. The content is ignored here. You can find details in the dataset.
-- `format`: the logical format of SQL query, which included the following sub-elements:
+- `format`: the logical format of SQL query, which is inspired by the logical format used in [WikiSQL](https://github.com/salesforce/WikiSQL) and includs the following sub-elements:
   - `table`: a list of numerical index of tables that are related to the question.
   - `cond`: a list of `[talble_index, condition_column_index, condition_operation_index, condition_value]`, where:
     - `table_index`: the numerical index of table that is related to this condition column.
