@@ -103,3 +103,13 @@ The meaning of each elements are as follows:
 - ```Validate:``` python main.py --task validate
 
 - ```Test:``` python main.py --task test
+
+## Evaluation
+
+- Generate MIMIC III database ```mimic.db``` based on the table schema provided above and put in folder ```mimic_db```.
+
+- Generate lookup table with ```build_lookup.ipynb```.
+
+- Put the model generated queries in folder ```generated_sql```. 
+
+- Run overall evaluation or breakdown evaluation. If you plan to apply condition value recover technique, you need to run overall evaluation first (which will save the generated SQL queries with recovered condition values) before getting breakdown performance.
