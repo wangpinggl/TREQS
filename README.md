@@ -20,10 +20,11 @@ Ping Wang, Tian Shi, and Chandan K. Reddy. Text-to-SQL Generation for Question A
 
 ```
 @inproceedings{wang2020text,
- title={Text-to-SQL Generation for Question Answering on Electronic Medical Records},
- author={Wang, Ping and Shi, Tian and Reddy, Chandan K.},
- booktitle={Proceedings of The Web Conference 2020 (WWW'20)},
- year={2020}
+  title={Text-to-SQL Generation for Question Answering on Electronic Medical Records},
+  author={Wang, Ping and Shi, Tian and Reddy, Chandan K},
+  booktitle={Proceedings of The Web Conference 2020},
+  pages={350--361},
+  year={2020}
 }
 ```
 
