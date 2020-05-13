@@ -38,7 +38,7 @@ MIMICSQL is created based on the publicly available real-world de-identified [Me
   - `Prescriptions`: `[‘subject_id’, ‘hadm_id’, ‘icustay_id’, ‘drug type’, ‘drug name’, ‘drug code’, ‘drug route’, ‘drug dose’]`
   - `Lab`: `[‘subject_id’, ‘hadm_id’, ‘itemid’, ‘lab test chart time’, ‘lab test abnormal status’, ‘lab test value’, ‘lab test name’, ‘lab test fluid’, ‘lab test category’]`
 
-- ```Questions:``` MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). Generally, each template question is rephrased as one natural language question. Readers are refered to read the [paper](http://dmkd.cs.vt.edu/papers/WWW20.pdf) get more detailed information for question generation and basic statistics of MIMICSQL dataset.
+- ```Questions:``` We do not enumerate all possible questions about MIMIC III dataset. MIMICSQL dataset is generated based on  the patient information related to 100 randomly sampled hospital admissions. MIMICSQL has two subsets, in which the first set is composed of template questions (machine generated), while the second consists of natural language questions (human annotated). Generally, each template question is rephrased as one natural language question. Readers are refered to read the [paper](http://dmkd.cs.vt.edu/papers/WWW20.pdf) get more detailed information for question generation and basic statistics of MIMICSQL dataset.
 
 - ```Example:``` Here we provide a data sample in MIMICSQL to illustrate the meaning of each element.
 
@@ -107,10 +107,12 @@ The meaning of each elements are as follows:
 
 ## Evaluation
 
-- Generate MIMIC III database ```mimic.db``` based on the table schema provided above and put in folder ```mimic_db```.
+The codes for evaluation are provided in folder ```evaluation```. You can follow the following steps to evaluate the generated queries.
+
+- Update the path to the MIMIC III data and generate MIMIC III database ```mimic.db``` with ```process_mimic_db.py```.
 
 - Generate lookup table with ```build_lookup.ipynb```.
 
-- Put the model generated queries in folder ```generated_sql```. 
+- Put the output file with model generated queries in folder ```generated_sql```. 
 
-- Run overall evaluation or breakdown evaluation. If you plan to apply condition value recover technique, you need to run overall evaluation first (which will save the generated SQL queries with recovered condition values) before getting breakdown performance.
+- Run overall evaluation or breakdown evaluation. If you plan to apply condition value recover technique, you need to run overall evaluation first (which will save the generated SQL queries with recovered condition values) before getting breakdown performance. Also, for evaluating on testing and development set, make sure to use the corresponding data file test.json and dev.json for testing and development sets, respectively.
