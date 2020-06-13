@@ -113,6 +113,4 @@ The codes for evaluation are provided in folder ```evaluation```. You can follow
 
 - Generate lookup table with ```build_lookup.ipynb```.
 
-- Put the output file with model generated queries in folder ```generated_sql```. 
-
 - Run overall evaluation or breakdown evaluation. If you plan to apply condition value recover technique, you need to run overall evaluation first (which will save the generated SQL queries with recovered condition values) before getting breakdown performance. Also, for evaluating on testing and development set, make sure to use the corresponding data file test.json and dev.json for testing and development sets, respectively.
