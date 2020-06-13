@@ -81,7 +81,7 @@ MIMICSQL is created based on the publicly available real-world de-identified [Me
 
 The meaning of each elements are as follows:
 - `key`: a unique ID of each data sample. You can make correspondence between the template question and natural language question using this ID.
-- `question_refine`: the machine genrated template question (in `mimicsql_template` folder) or natural language question (in `mimicsql_natural` folder) annotated by [Freelancers](https://www.freelancer.com/). You can make correspondence between tmplate question and natural language questions using `key` of each data sample.
+- `question_refine`: the machine genrated template question (in `mimicsql_template` folder) or natural language question (in `mimicsql_natural` folder) annotated by [Freelancers](https://www.freelancer.com/). You can make correspondence between template question and natural language questions using `key` of each data sample.
 - `question_refine_tok`: the tokenized question. The content is ignored here. You can find details in the dataset.
 - `sql`: the SQL query corresponding to the question.
 - `sql_tok`: the tokenized SQL query. The content is ignored here. You can find details in the dataset.
@@ -97,7 +97,7 @@ The meaning of each elements are as follows:
     - `column_index`: the numerical index of column that is used for aggregation.
   - `sel`: the numerical index of aggregation operation used in the SQL query. Here is the dictionary `{'': 0, 'count': 1, 'max': 2, 'min': 3, 'avg': 4}`.
 
-## Usuage
+## Usage
 
 - ```Training:``` python main.py 
 
