@@ -408,7 +408,7 @@ class End2EndBase(object):
                     model_optimal_file, map_location=lambda storage, loc: storage))
 
             start_time = time.time()
-            output_file = os.path.join('..', 'nats_results',
+            output_file = os.path.join('evaluation/generated_sql',
                                        self.args.file_output)
             data_check = []
             try:

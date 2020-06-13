@@ -13,7 +13,7 @@ Use in the framework and cannot remove.
 '''
 parser.add_argument('--task', default='train', help='train | validate | test | evaluate')
 
-parser.add_argument('--data_dir', default='../cqa_data/cqa_data_annotated', help='directory that store the data.')
+parser.add_argument('--data_dir', default='mimicsql_data/mimicsql_natural', help='directory that store the data.')
 parser.add_argument('--file_train', default='train.json', help='Training')
 parser.add_argument('--file_val', default='dev.json', help='validation')
 parser.add_argument('--file_test', default='test.json', help='test data')
@@ -59,7 +59,7 @@ parser.add_argument('--step_decay', type=float, default=0.8, help='---')
 args = parser.parse_args()
 
 if args.task == 'train' or args.task == 'validate' or args.task == 'test':
-    from .model import modelABS
+    from model import modelABS
     model = modelABS(args)
 if args.task == "train":
     model.train()
