@@ -134,7 +134,7 @@ Here we provide the results on the new version of natual language questions.
       <td></td><td>Acc_LF</td><td>Acc_EX</td><td>Agg_op</td><td>Agg_col</td><td>Table</td><td>Con_col+op</td><td>Con_val</td><td>Average</td>
     </tr>
     <tr>
-      <td>Testing</td><td>0.482</td><td>0.611</td><td>0.993</td><td>0.970</td><td>0.954</td><td>0.854</td><td>0.630</td><td>0.881</td>
+      <td>Testing</td><td>0.482</td><td>0.611</td><td>0.993</td><td>0.970</td><td>0.954</td><td>0.857</td><td>0.630</td><td>0.881</td>
     </tr>
     <tr>
       <td>Testing+recover</td><td>0.547</td><td>0.690</td><td>0.992</td><td>0.969</td><td>0.953</td><td>0.863</td><td>0.729</td><td>0.901</td>
