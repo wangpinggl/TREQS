@@ -119,12 +119,40 @@ The codes for evaluation are provided in folder ```evaluation```. You can follow
 
 ## Results
 
-Here we provide the results on the new version of natual language questions (Can be found in `mimicsql_data/mimicsql_natual_v2`).
+Here we provide the results on the new version of natual language questions.
 
-| Dataset              | Overall Evaluation || Breakdown Evaluation                               ||||||
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th colspan="2">Overall Evaluation</th>
+      <th colspan="6">Breakdown Evaluation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td><td>Acc_LF</td><td>Acc_EX</td><td>Agg_op</td><td>Agg_col</td><td>Table</td><td>Con_col+op</td><td>Con_val</td><td>Average</td>
+    </tr>
+    <tr>
+      <td>Testing</td><td>0.482</td><td>0.611</td><td>0.993</td><td>0.970</td><td>0.954</td><td>0.854</td><td>0.630</td><td>0.881</td>
+    </tr>
+    <tr>
+      <td>Testing+recover</td><td>0.547</td><td>0.690</td><td>0.992</td><td>0.969</td><td>0.953</td><td>0.863</td><td>0.729</td><td>0.901</td>
+    </tr>
+    <tr>
+      <td>Development</td><td>0.432</td><td>0.636</td><td>0.997</td><td>0.988</td><td>0.956</td><td>0.845</td><td>0.524</td><td>0.862</td>
+    </tr>
+    <tr>
+      <td>Development+recover</td><td>0.526</td><td>0.741</td><td>0.997</td><td>0.988</td><td>0.956</td><td>0.837</td><td>0.639</td><td>0.883</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- | Dataset              | Overall Evaluation || Breakdown Evaluation                               ||||||
 |-|-|-|-|-|-|-|-|-|
 |                      |Acc\_LF   | Acc\_EX |Agg\_op | Agg\_col | Table |Con\_col+op |Con\_val |Average|
 |Testing               | 0.482    |0.611    |0.993   | 0.970    |0.954  |0.854       |0.630    |0.881  |
 |Testing + recover     |0.547     |0.690    |0.992   | 0.969    |0.953  |0.863       |0.729    |0.901  |
 |Development           | 0.432    |0.636    |0.997   | 0.988    |0.956  |0.845       |0.524    |0.862  |
 |Development + recover | 0.526    |0.741    |0.997   | 0.988    |0.956  |0.837       |0.639    |0.883  |
+ -->
