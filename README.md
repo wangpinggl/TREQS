@@ -14,6 +14,8 @@
   - Dataset and codes: https://github.com/wangpinggl/TREQS
   - Slides: https://github.com/wangpinggl/TREQS/blob/master/TREQS.pdf
   - Presentation Video: [Video](https://drive.google.com/open?id=1tXRaobsz1BWUJpzV976pgox_46c8jkPE)
+  
+- Updates (06/2020) : We recently further improve the quality of human annotated questions and release a new version of natural language questions in `mimicsql_data/mimicsql_natual_v2`. The model performance on this new version of data can be found as follows.
 
 ## Citation
 Ping Wang, Tian Shi, and Chandan K. Reddy. Text-to-SQL Generation for Question Answering on Electronic Medical Records. In Proceedings of The Web Conference 2020 (WWW’20), April 20–24, 2020, Taipei, Taiwan.
@@ -114,3 +116,15 @@ The codes for evaluation are provided in folder ```evaluation```. You can follow
 - Generate lookup table with ```build_lookup.ipynb```.
 
 - Run overall evaluation or breakdown evaluation. If you plan to apply condition value recover technique, you need to run overall evaluation first (which will save the generated SQL queries with recovered condition values) before getting breakdown performance. Also, for evaluating on testing and development set, make sure to use the corresponding data file test.json and dev.json for testing and development sets, respectively.
+
+## Results
+
+Here we provide the results on the new version of natual language questions (Can be found in `mimicsql_data/mimicsql_natual_v2`).
+
+| Dataset              | Overall Evaluation || Breakdown Evaluation                               ||||||
+|-|-|-|-|-|-|-|-|-|
+|                      |Acc\_LF   | Acc\_EX |Agg\_op | Agg\_col | Table |Con\_col+op |Con\_val |Average|
+|Testing               | 0.482    |0.611    |0.993   | 0.970    |0.954  |0.854       |0.630    |0.881  |
+|Testing + recover     |0.547     |0.690    |0.992   | 0.969    |0.953  |0.863       |0.729    |0.901  |
+|Development           | 0.432    |0.636    |0.997   | 0.988    |0.956  |0.845       |0.524    |0.862  |
+|Development + recover | 0.526    |0.741    |0.997   | 0.988    |0.956  |0.837       |0.639    |0.883  |
