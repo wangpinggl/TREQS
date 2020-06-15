@@ -18,7 +18,7 @@
 - Updates (06/2020) : We recently further rephrased some of the human annotated questions and released a new version of natural language questions in `mimicsql_data/mimicsql_natual_v2`. The model performance on this new version of data can be found below.
 
 ## Citation
-Ping Wang, Tian Shi, and Chandan K. Reddy. Text-to-SQL Generation for Question Answering on Electronic Medical Records. In Proceedings of The Web Conference 2020 (WWW’20), April 20–24, 2020, Taipei, Taiwan.
+Ping Wang, Tian Shi, and Chandan K. Reddy. "Text-to-SQL Generation for Question Answering on Electronic Medical Records." In Proceedings of The Web Conference 2020 (WWW’20), pp. 350-361, 2020.
 
 ```
 @inproceedings{wang2020text,
