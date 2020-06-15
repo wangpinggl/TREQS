@@ -119,7 +119,7 @@ The codes for evaluation are provided in folder ```evaluation```. You can follow
 
 ## Results
 
-Here we provide the results on the new version of natual language questions.
+Here we provide the results on the new version of natural language questions provided in `mimicsql_data/mimicsql_natual_v2`.
 
 <table>
   <thead>
