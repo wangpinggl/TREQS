@@ -216,7 +216,7 @@ class modelABS(modelSeq2SeqBase):
         self.pipe_data['decoderB']['past_attn'] = past_attn
         self.pipe_data['decoderB']['hidden'] = hidden
         self.pipe_data['decoderB']['past_dech'] = past_dech
-        self.pipe_data['decoderB']['accu_attn'] = accu_attn
+        self.pipe_data['decoderB']['accu_attn'] = [a for a in accu_attn]
         self.pipe_data['decoderB']['accu_attn'].append(attn)
         
         if self.args.task == 'train' or self.args.task == 'validate':
