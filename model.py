@@ -291,7 +291,7 @@ class modelABS(modelSeq2SeqBase):
         
         prb = torch.log(prb)
         loss = self.loss_criterion(
-            prb.view(-1, self.batch_data['vocab_size']),
+            prb.reshape(-1, self.batch_data['vocab_size']),
             self.batch_data['trg_output'].view(-1))
         
         return loss
